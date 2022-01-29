@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>DesafioGram</title>
+    <meta name="viewport" content="width=device-width" />
+    
+	<link rel="stylesheet" type="text/css" href="public/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="public/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="public/Site.css">
+	<link rel="stylesheet" type="text/css" href="public/toastr.min.css">
+
+</head>
+<body>
+    <div id="body" style="margin-top: 40px;">
+        <section class="content-wrapper main-content clear-fix">
+            <div class="text-center" style="width: 400px; margin: 0 auto;background:white;padding-top:15px;">
+				<h1>DesafioGram</h1>
+				<br>
+				<span>Registrate para que veas el clon de instagram</span>
+				<section class="login">
+					<article class="caja_texto">
+						<input name="txtCorreo" type="text" id="txtCorreo" class="form-control" style="padding-left: 10px;" placeholder="Correo"/>
+					</article>
+					<article class="caja_texto">
+						<input name="txtNombre" type="text" id="txtNombre" class="form-control" style="padding-left: 10px;" placeholder="Nombre" />
+					</article>
+					<article class="caja_texto">
+						<input name="txtUsuario" type="text" id="txtUsuario" class="form-control" style="padding-left: 10px;" placeholder="Usuario"/>
+					</article>
+					<article class="caja_texto">
+						<input name="txtFrase" type="text" id="txtFrase" class="form-control" style="padding-left: 10px;" placeholder="Frase Descriptiva" />
+					</article>
+					<article class="caja_texto">
+						<input name="txtPass" type="password" id="txtPass" class="form-control" style="padding-left: 10px;" placeholder="Password"/>
+					</article>
+					<article class="banda">
+						<Button ID="btnLoad" class="btn btn-primary" onclick="registro()">SignUp</Button>
+					</article>
+				</section>
+				<br>
+				<div id="dvSignup" class="alert alert-warning" style="width: 400px; margin: 0 auto;">
+					<span id="msjeAcceso">Ya tienes cuenta? </span><a href="/login">Login</a>
+				</div>
+				<br>
+				<div id="alertPass" class="alert alert-warning" style="display:none; width: 400px; margin: 0 auto;">
+					<span id="msjeAcceso"></span>
+				</div>
+			</div>
+        </section>
+    </div>
+
+	<script type="application/javascript" charset="utf8" src="public/desafiogram.js"></script>
+	<script type="application/javascript" charset="utf8" src="public/jquery-3.4.1.min.js"></script>
+    <script type="application/javascript" charset="utf8" src="public/jquery-ui.min.js"></script>
+    <script type="application/javascript" charset="utf8" src="public/bootstrap.bundle.min.js"></script>
+	<script type="application/javascript" charset="utf8" src="public/toastr.min.js"></script>
+</body>
+</html>
+
+
